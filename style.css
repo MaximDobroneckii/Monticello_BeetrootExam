@@ -14,8 +14,16 @@
 }
 
 /*Стили для демонстрации*/
-html, body {
-  height: 100%;
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* Основные стили */
@@ -606,6 +614,14 @@ nav {
   flex-flow: column wrap;
   padding: 140px 0;
   box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.gallery-wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
 }
 
 .gallery__holder {
