@@ -3,7 +3,7 @@ $(document).ready(function () {
 		arrows: false,
 		dots: true,
 		slidesToShow: 1,
-		autoplay: false,
+		autoplay: true,
 		speed: 1200,
 		autoplaySpeed: 1200,
 		responsive: [
@@ -26,12 +26,12 @@ $(document).ready(function () {
 		arrows: true,
 		dots: true,
 		slidesToShow: 3,
-		autoplay: false,
+		autoplay: true,
 		speed: 1000,
 		autoplaySpeed: 800,
 		responsive: [
 			{
-				breakpoint: 768,
+				breakpoint: 767,
 				settings: {
 					slidesToShow: 2
 				}
@@ -57,6 +57,13 @@ function initMap() {
 	}
 	let map = new google.maps.Map(document.getElementById("map"), opt);
 }
+
+$(document).ready(function () {
+	$('.menu-burger').click(function (event) {
+		$('.menu-burger,.menu-nav').toggleClass('active');
+	});
+
+});
 
 
 
